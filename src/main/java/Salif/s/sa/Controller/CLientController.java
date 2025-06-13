@@ -27,10 +27,11 @@ public class CLientController {
     private ClientService clientService;
 
     @ResponseStatus(value = HttpStatus.CREATED)
-    @PostMapping
+    @PostMapping()
     public void creer(@RequestBody Client Client){
         this.clientService.creer(Client);
     }
+
 
     @GetMapping()
     public List<Client> rechercher(){

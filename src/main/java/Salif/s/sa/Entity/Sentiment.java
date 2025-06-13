@@ -32,6 +32,8 @@ public class Sentiment {
         this.client = client;
     }
 
+  
+
     public int getId(){
         return this.id; 
     }

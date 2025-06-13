@@ -29,11 +29,13 @@ public class Client {
 
     public Client(int id, String email, String name, String password) {
         this.id = id;
-        this.name = name;
-        this.email = email;
+        this.name = email;
+        this.email = name;
         this.password = password;
 
     }
+
+   
 
     public int getClient(){
         return this.id;
